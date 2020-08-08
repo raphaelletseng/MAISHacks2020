@@ -126,7 +126,7 @@ export const ShadowItem = ({
   border-radius: ${radius || 6}px;
   transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
   -webkit-tap-highlight-color: transparent;
-  background-color: ${background || 'white'};
+  background-color: ${background || 'black'};
 
   ::after {
     position: absolute;

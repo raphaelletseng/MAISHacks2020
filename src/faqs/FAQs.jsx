@@ -9,6 +9,7 @@ import FAQGradient from './faq.svg';
 import FAQGradientExt from './faq-ext.svg';
 
 const Container = styled('div')`
+  background-color: #38227D;
   ${SectionBase({
     heightPx: 600,
     extHeightPx: 4096,

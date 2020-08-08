@@ -5,13 +5,14 @@ import Home from './home-bg.svg';
 //import HomeMobileTop from './home-bg-mobile-top.svg';
 //import HomeMobileBottom from './home-bg-mobile-bottom.svg';
 //import HomeIpad from './home-bg-ipad.svg';
-import LogoImage from './implementai-logo.png';
+import LogoImage from './maishacks-logo.png';
 
 import { SectionBase, SecondaryText } from '../common-styles';
-import { RED_PRESSABLE } from '../materials';
+import { BLUE_PRESSABLE } from '../materials';
 import Button from '../Button';
 
 const Container = styled('div')`
+  background-color: #38227D;
   ${SectionBase({
     heightPx: 900,
     backgroundImage: `url(${Home})`,
@@ -59,7 +60,7 @@ export default ({ id }) => (
       <Logo src={LogoImage} />
       <Button
         landing
-        material={RED_PRESSABLE}
+        material={BLUE_PRESSABLE}
         href="https://docs.google.com/forms/d/e/1FAIpQLSeeFnO-XfDT3Wj7NTZlc-2YD0vatLsoSzzAVbGkCeEztN2ZAw/viewform"
         target="_blank"
       >

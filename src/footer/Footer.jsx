@@ -6,7 +6,7 @@ import { TitleFont, MAX_WIDTH } from '../common-styles';
 
 const FooterContainer = styled('div')`
   display: block;
-  background-color: #3398cc;
+  background-color: #0C113D;
   display: flex;
   flex-direction: row;
   height: 225px;
@@ -124,7 +124,7 @@ export default () => (
             className={jsx(iconStyle, 'icon-linkedin')}
           />
         </SocialLinks>
-        ImplementAI {year}
+        MAIS Hacks {year}
       </CenterContent>
     </CenterContainer>
   </FooterContainer>
