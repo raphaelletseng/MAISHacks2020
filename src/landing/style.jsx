@@ -2,6 +2,7 @@ import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 
 export const SectionLeftColumn = styled('div')`
+  background-color: '#38227D';
   max-width: 500px;
   display: inline-block;
   @media screen and (min-width: 1260px) {
@@ -21,6 +22,8 @@ export const SectionRightColumn = styled('div')`
   flex-grow: 1;
   flex-basis: 0;
   padding-top: 20px;
+  text-align: left;
+  horizontal-align: left;
   @media screen and (min-width: 640px) {
     padding-top: 40px;
   }

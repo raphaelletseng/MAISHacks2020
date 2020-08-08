@@ -45,3 +45,12 @@ export const YELLOW_PRESSABLE = {
   ...YELLOW,
   pressedBackground: '#cc8849'
 };
+
+export const WHITE = {
+  background: 'white'
+}
+
+export const WHITE_PRESSABLE = {
+  ...WHITE,
+  pressedBackgroud: 'white'
+};

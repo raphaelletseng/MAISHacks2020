@@ -12,7 +12,7 @@ export const TitleFont = css`
 
 export const SecondaryText = css`
   ${PrimaryFont};
-  color: #2b2b2b;
+  color: #FFFFFF;
 `;
 
 export const SectionBase = props => css`
@@ -57,7 +57,7 @@ export const SectionBase = props => css`
 
 export const LeftContentPadding = css`
   @media screen and (min-width: 640px) {
-    padding-left: 20px;
+    padding-left: 0px;
   }
 `;
 
