@@ -10,6 +10,7 @@ import AboutGradient from './about.svg';
 import AboutGradientExt from './about-ext.svg';
 
 const Container = styled('div')`
+  background-color: #38227D;
   ${SectionBase({
     heightPx: 600,
     extHeightPx: 4096,

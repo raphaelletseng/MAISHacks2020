@@ -39,7 +39,7 @@ const sections = [
   {
     title: 'Home',
     id: 'landing',
-    titleColor: '#BF0400',
+    titleColor: 'black',
     Component: Landing
   },
   {

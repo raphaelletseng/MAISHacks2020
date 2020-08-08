@@ -32,7 +32,7 @@ const NavItemsWrapper = styled('div')`
 
 const navItem = ({ active, color }) => css`
   ${TitleFont};
-  color: ${active ? color : '#2b2b2b'};
+  color: ${active ? color : 'black'};
   height: 100%;
   font-size: 1.1em;
   line-height: ${navHeightPx}px;
@@ -82,7 +82,7 @@ const navBackgroundStyle = css`
   right: 0;
   width: 100%;
   height: ${navHeightPx}px;
-  background-color: white;
+  background-color: blue;
   z-index: -1;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0333), 0 0 40px rgba(0, 0, 0, 0.075);
 `;
