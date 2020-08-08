@@ -1,21 +1,24 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Home from './home-bg.svg';
+import SectionTitle from '../SectionTitle';
+import Home from './home-bg2.svg';
 //import HomeMobileTop from './home-bg-mobile-top.svg';
 //import HomeMobileBottom from './home-bg-mobile-bottom.svg';
 //import HomeIpad from './home-bg-ipad.svg';
-import LogoImage from './maishacks-logo.png';
+import LogoImage from './logo_with_wire.png';
 
-import { SectionBase, SecondaryText } from '../common-styles';
-import { BLUE_PRESSABLE } from '../materials';
+import { SectionBase, SecondaryText, SectionTextContent } from '../common-styles';
+import { WHITE_PRESSABLE } from '../materials';
 import Button from '../Button';
+import { SectionLeftColumn, SectionRightColumn, SectionContent } from './style';
+
 
 const Container = styled('div')`
   background-color: #38227D;
   ${SectionBase({
     heightPx: 900,
-    backgroundImage: `url(${Home})`,
+  //  backgroundImage: `url(${Home})`,
     //mobileBackgroundImage: `url(${HomeMobileTop}), url(${HomeMobileBottom})`,
     //backgroundIpadImage: `url(${HomeIpad})`
   })};
@@ -42,11 +45,11 @@ const LandingContent = styled('div')`
 `;
 
 const Logo = styled('img')`
-  width: 100%;
-  margin-bottom: 1em;
+  width: 1500%;
+  margin-bottom: -6em;
   display: block;
-  @media screen and (min-width: 480px) {
-    max-width: 315px;
+  @media screen and (min-width: 520px) {
+    max-width: 415px;
   }
 `;
 
@@ -54,18 +57,51 @@ const DateText = styled('div')`
   padding-bottom: 1.5em;
 `;
 
-export default ({ id }) => (
-  <Container id={id}>
-    <LandingContent>
-      <Logo src={LogoImage} />
-      <Button
-        landing
-        material={BLUE_PRESSABLE}
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeeFnO-XfDT3Wj7NTZlc-2YD0vatLsoSzzAVbGkCeEztN2ZAw/viewform"
-        target="_blank"
-      >
-        Apply Now!
-      </Button>
-    </LandingContent>
+export default ({id, titleColor }) => (
+  <Container id = {id}>
+
+    <SectionContent columns = {true}>
+      <SectionLeftColumn>
+          <Logo src = {LogoImage} />
+          
+      </SectionLeftColumn>
+      <SectionRightColumn>
+      <SectionTitle titleColor='white'>
+      {' '}
+      Coming to you DATE XX 2020!
+      </SectionTitle>
+        <SectionTextContent color='white'>
+         Join 150 of the brightest, most innovative students across Eastern Canada for a 24hr virtual hackathon focused on artificial intelligence.
+        </SectionTextContent>
+        <br></br>
+        <Button
+        //  landing
+          material = {WHITE_PRESSABLE}
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeeFnO-XfDT3Wj7NTZlc-2YD0vatLsoSzzAVbGkCeEztN2ZAw/viewform"
+          target="_blank"
+        >
+          APPLY NOW!
+        </Button>
+      </SectionRightColumn>
+    </SectionContent>
   </Container>
 );
+
+
+
+
+///export default ({ id }) => (
+//  <Container id={id}>
+//    <LandingContent>
+//      <Logo src={LogoImage} />
+//      <Button
+//        landing
+//        material={WHITE_PRESSABLE}
+//        href="https://docs.google.com/forms/d/e/1FAIpQLSeeFnO-XfDT3Wj7NTZlc-2YD0vatLsoSzzAVbGkCeEztN2ZAw/viewform"
+//        target="_blank"
+  //    >
+  //      Apply Now!
+  //    </Button>
+//    </LandingContent>
+//  </Container>
+//);

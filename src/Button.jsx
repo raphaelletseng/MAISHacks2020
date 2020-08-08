@@ -5,7 +5,7 @@ import { ShadowItem, TitleFont } from './common-styles';
 export default styled('a')`
   ${TitleFont};
   padding: 16px 32px;
-  color: white;
+  color: #38227D;
   display: inline-block;
   margin-top: 8px;
   text-decoration: none;
@@ -16,7 +16,7 @@ export default styled('a')`
   font-weight: bold;
   min-width: 180px;
   text-align: center;
-  ${props => ShadowItem({ radius: 26, ...props.material })};
+  ${props => ShadowItem({ radius: 10, ...props.material})};
   :hover {
     transform: scale(1.05);
   }
