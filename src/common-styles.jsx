@@ -22,15 +22,15 @@ export const SectionBase = props => css`
 
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 40px;
+  padding-top: 100px;
 
   :first-child {
-    padding-top: 0;
+    padding-top: 50;
   }
 
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right top, right bottom;
+  background-position: left top, left bottom;
   background-image: ${props.mobileBackgroundImage || 'none'};
 
   @media screen and (min-width: 640px) {
