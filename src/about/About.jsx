@@ -12,7 +12,7 @@ import AboutGradientExt from './about-ext.svg';
 const Container = styled('div')`
   background-color: #38227D;
   ${SectionBase({
-    heightPx: 600,
+    heightPx: 500,
     extHeightPx: 4096,
 //    backgroundImage: `url(${AboutGradient}), url(${AboutGradientExt})`,
   //  backgroundIpadImage: `url(${AboutGradient}), url(${AboutGradientExt})`
