@@ -1,6 +1,7 @@
+/** @jsx jsx */
 import React from 'react';
 
-import { jsx, css } from '@emotion/core';
+import { jsx, css} from '@emotion/core';
 import styled from '@emotion/styled';
 //import detectPassiveEvents from 'detect-passive-events';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
