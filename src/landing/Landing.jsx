@@ -23,7 +23,7 @@ const Container = styled('div')`
     //backgroundIpadImage: `url(${HomeIpad})`
   })};
   display: flex;
-  
+
   @media screen and (min-width: 640px) {
     display: block;
     height: auto;
@@ -33,7 +33,8 @@ const Container = styled('div')`
 const Background = styled('div')`
   background-color: #38227D;
   ${SectionBase({
-    backgroundImage: `url(${Home})`
+    backgroundImage: `url(${Home})`,
+    heightPx: 300,
   })}
   position: relative;
   display: flex;

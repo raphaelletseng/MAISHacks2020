@@ -37,8 +37,10 @@ const CenterContent = styled('div')`
 `;
 
 const SocialLinks = styled('div')`
+  color: #FFFFFF;
   margin: auto;
   padding-bottom: 12px;
+  padding: 20px;
   width: 700px;
   align-items: center;
   text-align: center;
@@ -61,7 +63,7 @@ const footerLink = css`
 
 const iconStyle = css`
   font-size: 32px;
-  margin: 0 8px;
+  margin: 5px 2px;
   ${footerLink};
 
   @media only screen and (max-width: 767px) {
@@ -76,54 +78,56 @@ export default () => (
     <CenterContainer>
       <CenterContent>
         <SocialLinks>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
           <a
             aria-label="Contact Us"
             href="mailto:mcgillaicontact@gmail.com"
-            className={jsx(iconStyle, 'icon-mail-alt')}
+            class="fa fa-google"
           />
           <a
             aria-label="Facebook"
             href="https://www.facebook.com/McGillAI/"
             target="_blank"
             rel="noopener"
-            className={jsx(iconStyle, 'icon-facebook')}
+            class="fa fa-facebook"
           />
           <a
             aria-label="Twitter"
             href="https://twitter.com/mcgillaisociety"
             target="_blank"
             rel="noopener"
-            className={jsx(iconStyle, 'icon-twitter')}
+            class="fa fa-twitter"
           />
           <a
             aria-label="Instagram"
             href="https://www.instagram.com/mcgillaisociety/"
             target="_blank"
             rel="noopener"
-            className={jsx(iconStyle, 'icon-instagram')}
+            class= "fa fa-instagram"
           />
           <a
             aria-label="Medium"
             href="https://medium.com/mcgill-artificial-intelligence-review"
             target="_blank"
             rel="noopener"
-            className={jsx(iconStyle, 'icon-medium')}
+            class="fa fa-medium"
           />
           <a
             aria-label="Github"
             href="https://github.com/McGillAISociety"
             target="_blank"
             rel="noopener"
-            className={jsx(iconStyle, 'icon-github')}
+            class="fa fa-github"
           />
           <a
             aria-label="Linkedin"
             href="https://www.linkedin.com/company/mcgill-artificial-intelligence-society/"
             target="_blank"
             rel="noopener"
-            className={jsx(iconStyle, 'icon-linkedin')}
+            class= "fa fa-linkedin"
           />
         </SocialLinks>
+
         MAIS Hacks {year}
       </CenterContent>
     </CenterContainer>

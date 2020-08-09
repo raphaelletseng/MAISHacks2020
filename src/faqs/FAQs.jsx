@@ -5,7 +5,7 @@ import { SectionBase, SectionContent } from '../common-styles';
 import SectionTitle from '../SectionTitle';
 
 import FAQItem from './FAQItem';
-import FAQGradient from './faq.svg';
+import FAQGradient from './faq.png';
 import FAQGradientExt from './faq-ext.svg';
 
 const Container = styled('div')`
@@ -13,8 +13,8 @@ const Container = styled('div')`
   ${SectionBase({
     heightPx: 600,
     extHeightPx: 4096,
-    backgroundImage: `url(${FAQGradient}), url(${FAQGradientExt})`,
-    backgroundIpadImage: `url(${FAQGradient}), url(${FAQGradientExt})`
+    //backgroundImage: `url(${FAQGradient}), url(${FAQGradientExt})`,
+    //backgroundIpadImage: `url(${FAQGradient}), url(${FAQGradientExt})`
   })};
 `;
 
@@ -39,7 +39,21 @@ const FAQColumn = styled('div')`
 
 const SponsorshipLink = styled('a')`
   text-decoration: underline;
-  color: black !important;
+  color: #9ABBD7 !important;
+`;
+
+const FAQImage = styled('img')`
+  position: absolute;
+  top: 4em;
+  bottom: 4m;
+  display: none;
+  width: 10%;
+  height: auto;
+  @media screen and (min-width: 1050px) {
+    display: block;
+    width: 450px
+    height: auto;
+  }
 `;
 
 export default ({ id, titleColor }) => (
@@ -47,6 +61,7 @@ export default ({ id, titleColor }) => (
     <SectionTitle titleColor={titleColor}>FAQs</SectionTitle>
     <SectionContent>
       <FAQContainer>
+      <FAQImage src={require('./faq.png')} />
         <FAQColumn>
           <FAQItem title="Can I register for ImplementAI?">
             Anyone can participate as long as they are a student for the fall

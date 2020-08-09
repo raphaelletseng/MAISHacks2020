@@ -14,8 +14,8 @@ const Container = styled('div')`
   ${SectionBase({
     heightPx: 600,
     extHeightPx: 4096,
-    backgroundImage: `url(${AboutGradient}), url(${AboutGradientExt})`,
-    backgroundIpadImage: `url(${AboutGradient}), url(${AboutGradientExt})`
+//    backgroundImage: `url(${AboutGradient}), url(${AboutGradientExt})`,
+  //  backgroundIpadImage: `url(${AboutGradient}), url(${AboutGradientExt})`
   })};
 `;
 
@@ -24,7 +24,7 @@ const AboutPeople = styled('img')`
   top: 4em;
   bottom: 4m;
   display: none;
-  width: 45%;
+  width: 35%;
   height: auto;
   @media screen and (min-width: 1050px) {
     display: block;
@@ -53,14 +53,8 @@ export default ({ id, titleColor }) => (
     <SectionContent columns={true}>
       <SectionLeftColumn>
         <SectionTextContent>
-          <AboutLocation src={require('./about-location.png')} />
           <p>
-            Join 150 of the brightest, most innovative students across eastern
-            Canada for a 24 hour hackathon focused on artificial intelligence.{' '}
-          </p>
-
-          <p>
-            Innovation lies at the heart of ImplementAI, with past winners
+            Innovation lies at the heart of MAIS Hacks, with past winners
             building applications and solutions for topics ranging from music
             composition, plant pathology, and security patrols.
           </p>
@@ -70,12 +64,12 @@ export default ({ id, titleColor }) => (
             welcome to join. We want you to bring life, a desire to learn about
             AI, and how it can be used to overcome societal problems and boost
             competitiveness. Bring your best ideas for a fruitful weekend, and
-            we’ll provide the food, mentors, computing credits, and swag.{' '}
+            we’ll provide the mentors, computing credits, and swag.{' '}
           </p>
         </SectionTextContent>
       </SectionLeftColumn>
       <SectionRightColumn>
-        <AboutPeople src={require('./about-people.jpg')} />
+        <AboutPeople src={require('./about_head.png')} />
       </SectionRightColumn>
     </SectionContent>
   </Container>
