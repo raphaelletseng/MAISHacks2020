@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import SectionTitle from '../SectionTitle';
-import Home from './home-bg2.svg';
+import Home from './clouds.png';
 //import HomeMobileTop from './home-bg-mobile-top.svg';
 //import HomeMobileBottom from './home-bg-mobile-bottom.svg';
 //import HomeIpad from './home-bg-ipad.svg';
@@ -17,11 +17,25 @@ import { SectionLeftColumn, SectionRightColumn, SectionContent } from './style';
 const Container = styled('div')`
   background-color: #38227D;
   ${SectionBase({
-    heightPx: 900,
-  //  backgroundImage: `url(${Home})`,
+    heightPx: 500,
+//    backgroundImage: `url(${Home})`,
     //mobileBackgroundImage: `url(${HomeMobileTop}), url(${HomeMobileBottom})`,
     //backgroundIpadImage: `url(${HomeIpad})`
   })};
+  display: flex;
+  
+  @media screen and (min-width: 640px) {
+    display: block;
+    height: auto;
+  }
+`;
+
+const Background = styled('div')`
+  background-color: #38227D;
+  ${SectionBase({
+    backgroundImage: `url(${Home})`
+  })}
+  position: relative;
   display: flex;
   height: 100vh;
   @media screen and (min-width: 640px) {
@@ -63,7 +77,7 @@ export default ({id, titleColor }) => (
     <SectionContent columns = {true}>
       <SectionLeftColumn>
           <Logo src = {LogoImage} />
-          
+
       </SectionLeftColumn>
       <SectionRightColumn>
       <SectionTitle titleColor='white'>
@@ -73,7 +87,6 @@ export default ({id, titleColor }) => (
         <SectionTextContent color='white'>
          Join 150 of the brightest, most innovative students across Eastern Canada for a 24hr virtual hackathon focused on artificial intelligence.
         </SectionTextContent>
-        <br></br>
         <Button
         //  landing
           material = {WHITE_PRESSABLE}
@@ -84,6 +97,8 @@ export default ({id, titleColor }) => (
         </Button>
       </SectionRightColumn>
     </SectionContent>
+    <Background>
+  </Background>
   </Container>
 );
 
