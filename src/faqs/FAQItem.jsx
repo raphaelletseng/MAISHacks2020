@@ -9,11 +9,12 @@ const FAQTitle = styled('h2')`
   ${TitleFont};
   font-weight: bold;
   font-size: 1.5em;
+  color: #D2BBD4;
 `;
 
 const FAQText = styled('div')`
   ${SecondaryText};
-  font-size: 1.25em;
+  font-size: 1.1em;
 `;
 
 export default ({ title, children }) => (
