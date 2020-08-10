@@ -57,7 +57,7 @@ const sections = [
   {
     title: 'FAQs',
     id: 'faqs',
-    titleColor: '#2625C8',
+    titleColor: '#9BAAD7',
     Component: FAQs
   }//,
   //{

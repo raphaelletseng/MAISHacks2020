@@ -45,7 +45,7 @@ const FAQColumn = styled('div')`
 
 const SponsorshipLink = styled('a')`
   text-decoration: underline;
-  color: #9ABBD7 !important;
+  color: #0C113D !important;
 `;
 
 const FAQImage = styled('img')`
@@ -53,8 +53,8 @@ const FAQImage = styled('img')`
   top: 4em;
   bottom: 4m;
   display: none;
-  width: 30%;
-  height: 90%;
+  width: 20%;
+  height: relative;
   @media screen and (min-width: 1050px) {
     display: block;
     width: 450px
@@ -72,51 +72,51 @@ export default ({ id, titleColor }) => (
 
       <SectionRightColumn>
         <SectionTitle titleColor={titleColor}>{' '}FAQs</SectionTitle>
-
+        <br/><br/>
       <FAQContainer>
 
         <FAQColumn>
 
           <Accordion atomic={true}>
             <AccordionItem title = "Can I register for MAIS Hacks?">
-            Anyone can participate! Undergraduates, Masters, and PhD students are all welcome.
+            <p> Anyone can participate! Undergraduates, Masters, and PhD students are all welcome. </p>
             </AccordionItem>
 
             <AccordionItem title = "How many people can I have on my team?">
-            You can form teams of up to four people with no restrictions on
-            school, province, or experience level.
+            <p>You can form teams of up to four people with no restrictions on
+            school, province, or experience level.</p>
             </AccordionItem>
 
             <AccordionItem title = "I'll need help to form a team!">
-            We will be having a team formation channel on the slack for you to
+            <p>We will be having a team formation channel on the slack for you to
             get in contact with anyone who may also be looking for a team!
             Additionally, we will be having a team formation event on the Friday
-            before the hackathon.
+            before the hackathon.</p>
             </AccordionItem>
 
             <AccordionItem title = "I am new to AI. Can I still participate?">
-            Yes - all skill levels are welcome at ImplementAI. More importantly,
-            we aim to provide a super-condensed - and fun - learning experience!
+            <p>Yes - all skill levels are welcome at ImplementAI. More importantly,
+            we aim to provide a super-condensed - and fun - learning experience!</p>
             </AccordionItem>
 
             <AccordionItem title = "How much does it cost to take part?">
-            The event is completely free of charge.
+            <p>The event is completely free of charge.</p>
             </AccordionItem>
 
             <AccordionItem title = "What is the application process like?">
-            We're looking for creative and enthusiastic people with the skills
+            <p>We're looking for creative and enthusiastic people with the skills
             to contribute to cool projects. Since this is an AI themed
             hackathon, we prefer applicants with past AI experience and projects
             - however, don't let this deter you from applying! Show us what
-            makes you special and let your enthusiasm shine!
+            makes you special and let your enthusiasm shine!</p>
             </AccordionItem>
 
             <AccordionItem title = "How can I become a sponsor?">
-            Email us at{' '}
+            <p>Email us at{' '}
             <SponsorshipLink href="mailto:mcgillaicontact@gmail.com">
               mcgillaicontact@gmail.com
             </SponsorshipLink>
-            .
+            .</p>
             </AccordionItem>
 
           </Accordion>
