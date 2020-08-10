@@ -1,5 +1,6 @@
 .accordion {
   border-radius: 5px;
+  white-space: pre-line;
 }
 .accordion .accordion-item:first-child .title {
   border-top-left-radius: 5px;
@@ -26,8 +27,8 @@
   transition: 0.4s;
 }
 .accordion .accordion-item .title:after {
-  content: '\2795';
-  font-size: 13px;
+  content: '\002B';
+  font-size: 20px;
   color: #FFFFFF;
   float: right;
   margin-left: 0px;
@@ -43,7 +44,7 @@
   background-color: #FFFFFF;
   font-family: 'Montserrat', monospace;
   font-size: 15px;
-  padding: 10px;
+  padding: 0 20px;
   margin-bottom: 0px;
 
 
@@ -52,7 +53,8 @@
   background-color: #2b2b2b;
 }
 .accordion .accordion-item.active .title:after {
-  content: '\2796';
+  content: '\2212';
+  color: #FFFFFF
 }
 .accordion .accordion-item.active .panel {
   max-height: 500px;
