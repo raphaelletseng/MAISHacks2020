@@ -1,6 +1,7 @@
+/** @jsx jsx */
 import React from 'react';
 
-import { jsx, css } from '@emotion/core';
+import { jsx, css} from '@emotion/core';
 import styled from '@emotion/styled';
 //import detectPassiveEvents from 'detect-passive-events';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -20,6 +21,7 @@ const Nav = styled('div')`
   right: 0;
   height: ${navHeightPx}px;
   z-index: 64;
+  background-color:"#2b2b2b";
 `;
 
 const NavItemsWrapper = styled('div')`
@@ -44,7 +46,7 @@ const navItem = ({ active, color }) => css`
   transition: color 0.2s, border-bottom 0.2s;
   cursor: pointer;
   text-decoration: none;
-
+  
   :hover {
     color: ${color};
     border-bottom: 6px solid ${color};
