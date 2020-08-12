@@ -26,10 +26,11 @@ import React from 'react';
 
 import Navbar from './nav/Navbar';
 import Landing from './landing/Landing';
+import Background from './background/Background';
 import About from './about/About';
-//import Schedule from './schedule/Schedule';
+import Schedule from './schedule/Schedule';
 import FAQs from './faqs/FAQs';
-//import Sponsors from './sponsors/Sponsors';
+import Sponsors from './sponsors/Sponsors';
 import Footer from './footer/Footer';
 
 import './assets/css/app.css';
@@ -48,24 +49,24 @@ const sections = [
     titleColor: '#9BAAD7',
     Component: About
   },
-  //{
-  //  title: 'Schedule',
-  //  id: 'schedule',
-  //  titleColor: '#8D18C5',
-  //  Component: Schedule
-//  },
+  {
+    title: 'Schedule',
+    id: 'schedule',
+    titleColor: '#8D18C5',
+    Component: Schedule
+  },
   {
     title: 'FAQs',
     id: 'faqs',
     titleColor: '#9BAAD7',
     Component: FAQs
-  }//,
-  //{
-//    title: 'Sponsors',
-//    id: 'sponsors',
-//    titleColor: '#3398CC',
-//    Component: Sponsors
-//  }
+  },
+  {
+    title: 'Sponsors',
+    id: 'sponsors',
+    titleColor: '#3398CC',
+    Component: Sponsors
+  }
 ];
 
 export default () => (

@@ -7,7 +7,7 @@ export const BLUE = {
 
 export const BLUE_PRESSABLE = {
   ...BLUE,
-  pressedBackground: '#314081'
+  pressedBackground: '#647CBD'
 };
 
 export const RED = {

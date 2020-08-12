@@ -22,7 +22,7 @@ export const SectionBase = props => css`
 
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 100px;
+  padding-top: 400px;
 
   :first-child {
     padding-top: 50;
@@ -167,5 +167,46 @@ export const HideOnMobile = ({ minWidth }) => css`
 
   @media screen and (min-width: ${minWidth || 768}px) {
     display: block;
+  }
+`;
+
+export const LandingSectionBase = props => css`
+  max-width: ${MAX_WIDTH};
+  height: 100%
+  margin: auto;
+  position: relative;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 400px;
+
+  :first-child {
+    padding-top: 50;
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: ${props.mobileBackgroundImage || 'none'};
+
+  @media screen and (min-width: 640px) {
+    min-height: ${props.heightPx}px;
+
+    background-image: ${props.backgroundIpadImage};
+    background-size: ${MAX_WIDTH} ${props.heightPx}px
+      ${props.extHeightPx && `, ${MAX_WIDTH} ${props.extHeightPx}px`};
+    background-position: left bottom, left ${props.heightPx - 1}px;
+
+    padding-left: 144px;
+    padding-right: 144px;
+    padding-top: 87.5px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    background-image: ${props.backgroundImage};
+  }
+
+  @media screen and (min-width: ${MAX_WIDTH}) {
+    background-position: center top, center ${props.heightPx - 1}px;
   }
 `;

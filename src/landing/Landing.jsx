@@ -2,13 +2,13 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import SectionTitle from '../SectionTitle';
-import Home from './clouds.png';
+import Home from './Clouds_resized3.png';
 //import HomeMobileTop from './home-bg-mobile-top.svg';
 //import HomeMobileBottom from './home-bg-mobile-bottom.svg';
 //import HomeIpad from './home-bg-ipad.svg';
 import LogoImage from './logo_with_wire.png';
 
-import { SectionBase, SecondaryText, SectionTextContent } from '../common-styles';
+import { SectionBase, SecondaryText, SectionTextContent, LandingSectionBase } from '../common-styles';
 import { WHITE_PRESSABLE } from '../materials';
 import Button from '../Button';
 import { SectionLeftColumn, SectionRightColumn, SectionContent } from './style';
@@ -16,9 +16,9 @@ import { SectionLeftColumn, SectionRightColumn, SectionContent } from './style';
 
 const Container = styled('div')`
   background-color: #38227D;
-  ${SectionBase({
-    heightPx: 500,
-//    backgroundImage: `url(${Home})`,
+  ${LandingSectionBase({
+    heightPx: 900,
+    backgroundImage: `url(${Home})`,
     //mobileBackgroundImage: `url(${HomeMobileTop}), url(${HomeMobileBottom})`,
     //backgroundIpadImage: `url(${HomeIpad})`
   })};
@@ -32,12 +32,13 @@ const Container = styled('div')`
 
 const Background = styled('div')`
   background-color: #38227D;
-  ${SectionBase({
+  ${LandingSectionBase({
     backgroundImage: `url(${Home})`,
-    heightPx: 300,
+    heightPx: 500,
   })}
   position: relative;
   display: flex;
+  width: 100%;
   height: 100vh;
   @media screen and (min-width: 640px) {
     display: block;
@@ -73,6 +74,7 @@ const DateText = styled('div')`
 `;
 
 export default ({id, titleColor }) => (
+
   <Container id = {id}>
 
     <SectionContent columns = {true}>
@@ -83,7 +85,7 @@ export default ({id, titleColor }) => (
       <SectionRightColumn>
       <SectionTitle titleColor='white'>
       {' '}
-      Coming to you DATE XX 2020!
+      Coming to you 3-4 Oct 2020!
       </SectionTitle>
         <SectionTextContent color='white'>
          Join 150 of the brightest, most innovative students across Eastern Canada for a 24hr virtual hackathon focused on artificial intelligence.
@@ -98,9 +100,8 @@ export default ({id, titleColor }) => (
         </Button>
       </SectionRightColumn>
     </SectionContent>
-    <Background>
-  </Background>
   </Container>
+
 );
 
 
