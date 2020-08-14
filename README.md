@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Theme Colours:
+Dark blue: #0C113D
+Medium blue: #647CBD
+Light blue: #9BAAD7
+
+Dark purple: #2D0C33
+Medium purple: #5D518C
+Light Purple: #D2BBD4
+
+Background: #38227D
+
 ## Available Scripts
 
 In the project directory, you can run:
