@@ -2,13 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import SectionTitle from '../SectionTitle';
-import Home from './Clouds_resized3.png';
+import Home from './Clouds_background.png';
 //import HomeMobileTop from './home-bg-mobile-top.svg';
 //import HomeMobileBottom from './home-bg-mobile-bottom.svg';
 //import HomeIpad from './home-bg-ipad.svg';
 import LogoImage from './logo_with_wire.png';
+import MobileLogo from './maishacksfull-logo.png';
 
-import { SectionBase, SecondaryText, SectionTextContent, LandingSectionBase } from '../common-styles';
+import { SecondaryText, SectionTextContent, LandingSectionBase } from '../common-styles';
 import { WHITE_PRESSABLE } from '../materials';
 import Button from '../Button';
 import { SectionLeftColumn, SectionRightColumn, SectionContent } from './style';
@@ -17,7 +18,7 @@ import { SectionLeftColumn, SectionRightColumn, SectionContent } from './style';
 const Container = styled('div')`
   background-color: #38227D;
   ${LandingSectionBase({
-    heightPx: 900,
+    heightPx: 920,
     backgroundImage: `url(${Home})`,
     //mobileBackgroundImage: `url(${HomeMobileTop}), url(${HomeMobileBottom})`,
     //backgroundIpadImage: `url(${HomeIpad})`
@@ -26,32 +27,17 @@ const Container = styled('div')`
 
   @media screen and (min-width: 640px) {
     display: block;
-    height: auto;
+    height: auto;;
   }
 `;
 
-const Background = styled('div')`
-  background-color: #38227D;
-  ${LandingSectionBase({
-    backgroundImage: `url(${Home})`,
-    heightPx: 500,
-  })}
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  @media screen and (min-width: 640px) {
-    display: block;
-    height: auto;
-  }
-`;
 
 const LandingContent = styled('div')`
   ${SecondaryText};
   font-size: 1.5em;
   margin: auto 0;
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   display: inline-block;
   @media screen and (min-width: 640px) {
     margin: 0;
@@ -62,10 +48,11 @@ const LandingContent = styled('div')`
 
 const Logo = styled('img')`
   width: 1500%;
-  margin-bottom: -6em;
+  margin-bottom: -12em;
   display: block;
-  @media screen and (min-width: 520px) {
+  @media screen and (min-width: 640px) {
     max-width: 415px;
+    margin-bottom: 0em;
   }
 `;
 
@@ -79,13 +66,13 @@ export default ({id, titleColor }) => (
 
     <SectionContent columns = {true}>
       <SectionLeftColumn>
-          <Logo src = {LogoImage} />
+          <Logo  src={LogoImage}/>
 
       </SectionLeftColumn>
       <SectionRightColumn>
       <SectionTitle titleColor='white'>
       {' '}
-      Coming to you 3-4 Oct 2020!
+      COMING TO YOU <br/> 3-4 OCT 2020!
       </SectionTitle>
         <SectionTextContent color='white'>
          Join 150 of the brightest, most innovative students across Eastern Canada for a 24hr virtual hackathon focused on artificial intelligence.

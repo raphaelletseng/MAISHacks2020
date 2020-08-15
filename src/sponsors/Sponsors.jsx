@@ -17,7 +17,7 @@ import SectionTitle from '../SectionTitle';
 
 const Container = styled('div')`
   ${SectionBase({
-    heightPx: 300,
+    heightPx: 200,
   //  backgroundImage: `url(${SponsorGradient})`,
   //  backgroundIpadImage: `url(${SponsorGradient})`
   })};
@@ -26,7 +26,7 @@ const Container = styled('div')`
 
 export default ({ id, titleColor }) => (
   <Container id={id}>
-    <SectionTitle titleColor={titleColor}>Sponsors</SectionTitle>
+    <SectionTitle titleColor={titleColor}>SPONSORS</SectionTitle>
     <SectionContent columns={true}>
       <SectionLeftColumn>
         <SectionTextContent>
@@ -37,7 +37,7 @@ export default ({ id, titleColor }) => (
               material={WHITE_PRESSABLE}
               href="mailto:mcgillaicontact@gmail.com"
             >
-              Sponsor us
+              SPONSOR  MAIS  HACKS
             </Button>
           </p>
         </SectionTextContent>

@@ -24,11 +24,14 @@ const Container = styled('div')`
     //backgroundImage: `url(${ScheduleLine}), url(${ScheduleLineExt})`,
     //backgroundIpadImage: `url(${ScheduleLine}), url(${ScheduleLineExt})`
   })};
+  background-color: #D2BBD4;
+  padding-bottom: 50px;
+  padding-top: 50px;
 `;
 
 const Day = styled('h3')`
   ${PrimaryFont};
-  color: ${props => (props.active ? props.activeColor : 'initial')};
+  color: ${props => (props.active ? props.activeColor : '#2b2b2b')};
   transition: opacity 0.2s;
   cursor: pointer;
   /* https://css-tricks.com/injecting-line-break/ */
@@ -78,14 +81,14 @@ export default class Schedule extends React.Component {
 
     return (
       <Container id={id}>
-        <SectionTitle titleColor={titleColor}>Schedule</SectionTitle>
+        <SectionTitle titleColor={titleColor}>SCHEDULE</SectionTitle>
         <SectionContent columns={true}>
           <SectionLeftColumn sticky={true}>
             <SectionTextContent>
               {scheduleData.map(({ date, events }, i) => (
                 <Day
                   active={i === selectedDayIndex}
-                  activeColor={titleColor}
+                  activeColor= '#647CBD'
                   key={date}
                   onClick={() => this.setState({ selectedDayIndex: i })}
                 >
@@ -96,7 +99,7 @@ export default class Schedule extends React.Component {
           </SectionLeftColumn>
           <SectionRightColumn>
             <ScheduleItemCard
-              titleColor={titleColor}
+              titleColor='#647CBD'
               events={scheduleData[selectedDayIndex].events}
             />
           </SectionRightColumn>

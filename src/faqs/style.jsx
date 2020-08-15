@@ -53,26 +53,3 @@ export const SectionContent = styled('div')`
   ${props => props.columns && FlexProps};
   margin-top: 25px;
 `;
-
-const FAQAccordion = styled('div')`
-  background-colour: #FFFFFF;
-  color: #2b2b2b;
-  cursor: pointer;
-  padding: 18px;
-  width: 80%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  :hover {
-    transform: scale(1.05);
-    background-color: #38227D;
-  }
-`;
-
-const FAQPanel = styled('div')`
-  padding: 0 18px;
-  backgroun-color: #9BAAD7;
-  display: none;
-  overflow: hidden;
-`;

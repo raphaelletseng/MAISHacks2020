@@ -7,6 +7,8 @@ import styled from '@emotion/styled';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import memoize from 'memoize-one';
 
+import Logo from './lightbulb.png';
+
 import { MAX_WIDTH, HideOnMobile, TitleFont } from '../common-styles';
 //hide on mobile
 const navHeightPx = 72;
@@ -21,14 +23,13 @@ const Nav = styled('div')`
   right: 0;
   height: ${navHeightPx}px;
   z-index: 64;
-  background-color:"#2b2b2b";
+  background-color: #38227D;
 `;
 
 const NavItemsWrapper = styled('div')`
   max-width: ${MAX_WIDTH};
   margin: 0 auto;
   padding: 0 144px;
-  padding-right: 0;
   height: 100%;
 `;
 
@@ -41,16 +42,26 @@ const navItem = ({ active, color }) => css`
   font-weight: bold;
   display: inline-block;
   margin-right: 40px;
+  margin-left: -20px;
   text-align: center;
   border-bottom: ${active ? 6 : 0}px solid ${active ? color : 'transparent'};
   transition: color 0.2s, border-bottom 0.2s;
   cursor: pointer;
   text-decoration: none;
-  
+
   :hover {
     color: ${color};
     border-bottom: 6px solid ${color};
   }
+`;
+
+const LogoImg = styled('img')`
+  height: 90%;
+  display: inline;
+  margin-right: -3em;
+  float: right;
+  padding-top:2px;
+
 `;
 
 class NavContents extends React.PureComponent {
@@ -64,13 +75,14 @@ class NavContents extends React.PureComponent {
             key={id}
             css={navItem({
               active: activeItemID === id,
-              color: '#FFFFFF'
+              color: '#FFFFFF',
             })}
             href={`#${id}`}
           >
             {title}
           </AnchorLink>
         ))}
+        <LogoImg src={Logo}/>
       </NavItemsWrapper>
     );
   }
@@ -83,6 +95,7 @@ const navBackgroundStyle = css`
   left: 0;
   right: 0;
   width: 100%;
+  opacity: 50%;
   height: ${navHeightPx}px;
   background-color: white;
   z-index: -1;
@@ -96,6 +109,17 @@ class NavBackground extends React.PureComponent {
     return <div className={navBackgroundStyle} style={{ opacity }} />;
   }
 }
+
+class NavLogo extends React.PureComponent {
+  render(){
+    return(
+      <LogoImg src={Logo}
+      style={{width:200, align:'top right'}}
+      />
+    );
+  }
+}
+
 
 export default class Navbar extends React.Component {
   state = { activeItemID: this.props.navItems[0].id, scrollOffset: 0 };

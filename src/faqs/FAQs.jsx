@@ -8,14 +8,10 @@ import {Accordion, AccordionItem} from 'react-light-accordion';
 import './index.css';
 
 
-import FAQItem from './FAQItem';
-import FAQGradient from './faq.png';
-import FAQGradientExt from './faq-ext.svg';
-
 const Container = styled('div')`
   background-color: #38227D;
   ${SectionBase({
-    heightPx: 800,
+    heightPx: 700,
     extHeightPx: 4096,
     //backgroundImage: `url(${FAQGradient}), url(${FAQGradientExt})`,
     //backgroundIpadImage: `url(${FAQGradient}), url(${FAQGradientExt})`
@@ -95,11 +91,11 @@ export default ({ id, titleColor }) => (
             </AccordionItem>
 
             <AccordionItem title = "I am new to AI. Can I still participate?">
-            <p>Yes - all skill levels are welcome at ImplementAI. More importantly,
+            <p>Yes - all skill levels are welcome at MAIS Hacks. More importantly,
             we aim to provide a super-condensed - and fun - learning experience!</p>
             </AccordionItem>
 
-            <AccordionItem title = "How much does it cost to take part?">
+            <AccordionItem title = "Does it cost anything to take part?">
             <p>The event is completely free of charge.</p>
             </AccordionItem>
 
@@ -121,21 +117,6 @@ export default ({ id, titleColor }) => (
 
           </Accordion>
 
-
-          <FAQItem title="What should I bring?">
-            Bring your student ID and your laptop - and don’t forget your
-            chargers! Toiletries are also recommended for hygiene.
-          </FAQItem>
-
-          <FAQItem title="How much does it cost to attend?">
-            The event is completely free of charge - leave it to us to provide
-            the food, swag, and accommodation for the event.
-          </FAQItem>
-
-          <FAQItem title="Do you provide travel reimbursements?">
-            Unfortunately, we are unable to provide travel reimbursements to
-            participants from far away. We hope to do so in the future though!
-          </FAQItem>
 
         </FAQColumn>
 
