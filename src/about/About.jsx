@@ -6,13 +6,11 @@ import { SectionBase, SectionTextContent } from '../common-styles';
 import { SectionLeftColumn, SectionRightColumn, SectionContent } from './style';
 
 import SectionTitle from '../SectionTitle';
-import AboutGradient from './about.svg';
-import AboutGradientExt from './about-ext.svg';
 
 const Container = styled('div')`
   background-color: #38227D;
   ${SectionBase({
-    heightPx: 300,
+    heightPx: 250,
     extHeightPx: 4096,
 //    backgroundImage: `url(${AboutGradient}), url(${AboutGradientExt})`,
   //  backgroundIpadImage: `url(${AboutGradient}), url(${AboutGradientExt})`

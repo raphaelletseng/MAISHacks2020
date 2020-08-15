@@ -84,6 +84,8 @@ export const SectionContent = styled('div')`
   margin-top: 25px;
 `;
 
+
+
 export const SectionLeftColumn = styled('div')`
   @media screen and (min-width: 1260px) {
     width: 350px;
@@ -179,6 +181,7 @@ export const LandingSectionBase = props => css`
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 400px;
+  padding-bottom: 10px;
 
   :first-child {
     padding-top: 50;
@@ -186,7 +189,7 @@ export const LandingSectionBase = props => css`
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: center center;
   background-image: ${props.mobileBackgroundImage || 'none'};
 
   @media screen and (min-width: 640px) {
@@ -200,6 +203,7 @@ export const LandingSectionBase = props => css`
     padding-left: 144px;
     padding-right: 144px;
     padding-top: 87.5px;
+    padding-bottom: 10px;
   }
 
   @media screen and (min-width: 1025px) {

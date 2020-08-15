@@ -13,7 +13,7 @@ const Title = styled('div')`
   color: #2b2b2b;
   padding-top: 0.33em;
   @media screen and (min-width: 640px) {
-    padding-top: 0.0875em;
+    padding-top: 0.8em;
     color: ${props => props.titleColor};
   }
 `;
