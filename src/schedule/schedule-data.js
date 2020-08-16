@@ -47,7 +47,6 @@ export default [
       {
         time: '12:00AM EST',
         name: 'Activity 4',
-        locations: ['Banque Nationale, Montreal Head Office']
       }
     ]
   },
@@ -70,7 +69,6 @@ export default [
       {
         time: '3:00PM-3:45PM EST',
         name: 'Awards and Closing Ceremony',
-        locations: ['Banque Nationale, Montreal Head Office']
       }
 
     ]

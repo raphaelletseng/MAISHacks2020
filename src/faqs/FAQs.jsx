@@ -39,7 +39,7 @@ const FAQColumn = styled('div')`
 
 
 
-const SponsorshipLink = styled('a')`
+const Link = styled('a')`
   text-decoration: underline;
   color: #0C113D !important;
 `;
@@ -75,19 +75,18 @@ export default ({ id, titleColor }) => (
 
           <Accordion atomic={true}>
             <AccordionItem title = "Can I register for MAIS Hacks?">
-            <p> Anyone can participate! Undergraduates, Masters, and PhD students are all welcome. </p>
+            <p> Anyone can participate! Cegep, undergraduates, Masters, and PhD students are all welcome. </p>
             </AccordionItem>
 
             <AccordionItem title = "How many people can I have on my team?">
-            <p>You can form teams of up to four people with no restrictions on
+            <p>You can form teams of up to 4 people with no restrictions on
             school, province, or experience level.</p>
             </AccordionItem>
 
             <AccordionItem title = "I'll need help to form a team!">
-            <p>We will be having a team formation channel on the slack for you to
+            <p>We will be having a team formation channel on Microsoft Teams for you to
             get in contact with anyone who may also be looking for a team!
-            Additionally, we will be having a team formation event on the Friday
-            before the hackathon.</p>
+            Additionally, we will be having a team formation Facebook Group before the hackathon.</p>
             </AccordionItem>
 
             <AccordionItem title = "I am new to AI. Can I still participate?">
@@ -107,12 +106,24 @@ export default ({ id, titleColor }) => (
             makes you special and let your enthusiasm shine!</p>
             </AccordionItem>
 
-            <AccordionItem title = "How can I become a sponsor?">
-            <p>Email us at{' '}
-            <SponsorshipLink href="mailto:mcgillaicontact@gmail.com">
-              mcgillaicontact@gmail.com
-            </SponsorshipLink>
-            .</p>
+            <AccordionItem title= "Do I need to install any software?">
+            <p> We will be using {' '}
+            <Link href="https://www.microsoft.com/en-US/microsoft-365/microsoft-teams/group-chat-software"
+            target='_blank' rel='noopener noreferrer'>
+            Microsoft Teams</Link> for the hackathon.
+            While you can access the platform through a web browser,
+            we encourage all hackers to install the Microsoft Teams Desktop app
+            for the best experience. </p>
+            </AccordionItem>
+
+            <AccordionItem title="Do I need to create any accounts?">
+            <p> You can join{' '}
+            <Link href="https://www.microsoft.com/en-US/microsoft-365/microsoft-teams/group-chat-software"
+            target='_blank' rel='noopener noreferrer'>
+            Microsoft Teams</Link>in advance to be sure that on October 3rd you
+            will be ready to hack! You will also need to create a {' '}
+            <Link href = "https://devpost.com/" target='_blank' rel='noopener noreferrer'>DevPost</Link>
+            account to submit your project at the end of the hackthon. </p>
             </AccordionItem>
 
           </Accordion>

@@ -15,6 +15,7 @@ const CardBase = styled('div')`
   border-top: 6px solid ${props => props.color};
   background: linear-gradient(90deg, #fdfdfd 33%, #f8f8f8) repeat-y;
   ${ShadowItem};
+  background-color: #272727;
   background-size: ${dateColSmWidth};
   @media screen and (min-width: 480px) {
     background-size: ${dateColMedWidth};
@@ -57,7 +58,7 @@ const EventDetails = styled('div')`
 const EventDetailsText = styled('div')`
   display: block;
   font-size: 0.9em;
-  color: #555;
+  color: #FFFFFF;
   ${props =>
     props.primary &&
     css`
