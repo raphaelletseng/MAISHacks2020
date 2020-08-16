@@ -83,7 +83,7 @@ export default ({ id, titleColor }) => (
         platforms such as Microsoft Teams, MAIS Hacks will continue to help you
         meet new people and form new friendships. <br /><br/>
 
-        Do not worry if you apply alone, there will be a Facebook group
+        Don't worry if you apply alone, there will be a Facebook group
         and channel dedicated to networking with your peers and team matching.
         <br/><br/>
        </Card>
@@ -102,7 +102,7 @@ export default ({ id, titleColor }) => (
 
        <Card>
           <CardTitle> PROJECTS </CardTitle>
-          Show us your true potential by completing a project with your teammates.
+          Build an awesome AI project with your teammates!
           It will help you gain experience, opportunities, and exposure to the field of AI.
           And, as always, there will be many prizes to be won!
             <br/><br/>

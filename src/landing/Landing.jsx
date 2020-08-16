@@ -74,13 +74,15 @@ export default ({id, titleColor }) => (
       {' '}
       COMING TO YOU <br/> 3-4 OCT 2020!
       </SectionTitle>
+      <br/>
         <SectionTextContent color='white'>
-         Join 150 of the brightest, most innovative students across Eastern Canada for a 24hr virtual hackathon focused on artificial intelligence.
+         <p>Join 150+ of the brightest, most innovative students across Eastern Canada
+         for a 24hr virtual AI hackathon.</p>
         </SectionTextContent>
         <Button
         //  landing
           material = {WHITE_PRESSABLE}
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeeFnO-XfDT3Wj7NTZlc-2YD0vatLsoSzzAVbGkCeEztN2ZAw/viewform"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfGulENexYZyEwkKKQlAJ3dut0127AuYnPNJ826pM8Zo4yC2w/viewform"
           target="_blank"
         >
           APPLY NOW!

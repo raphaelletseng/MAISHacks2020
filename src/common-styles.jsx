@@ -128,7 +128,7 @@ export const ShadowItem = ({
   border-radius: ${radius || 6}px;
   transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
   -webkit-tap-highlight-color: transparent;
-  background-color: ${background || 'black'};
+  background-color: ${background || 'white'};
 
   ::after {
     position: absolute;
@@ -177,6 +177,7 @@ export const LandingSectionBase = props => css`
   height: 100%
   margin: auto;
   position: relative;
+  align: center;
 
   padding-left: 20px;
   padding-right: 20px;

@@ -60,7 +60,7 @@ const LogoImg = styled('img')`
   display: inline;
   margin-right: -3em;
   float: right;
-  padding-top:2px;
+  padding-top: 8px;
 
 `;
 

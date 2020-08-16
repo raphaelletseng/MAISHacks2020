@@ -5,9 +5,12 @@ import { ShadowItem, TitleFont } from './common-styles';
 export default styled('a')`
   ${TitleFont};
   padding: 16px 32px;
+  position: relative;
+  left: -30px;
+  top: -8px;
   color: #38227D;
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 2px;
   text-decoration: none;
   text-transform: uppercase;
   /* Todo convert to em */
