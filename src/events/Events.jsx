@@ -25,13 +25,24 @@ const Container = styled('div')`
   }
 `;
 
+const Col= styled ('div')`
+  width: 33.33%;
+  display: inline-block;
+  grid-gap: 50px;
+  vertical-align: top;
+  padding: 20px;
+  @media screen and (max-width: 767px){
+    width:100%;
+  }
+`;
+
 const Card = styled ('div')`
   ${PrimaryFont}
   font-size: 1.1em;
-  float: left;
-  width: 33.33%;
+  float: top;
+  width: 100%;
   box-sizing: border-box;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   padding: 10px 20px 10px ;
   background-color: #FFFFFF;
   text-align: center;
@@ -66,17 +77,19 @@ const CardTitle = styled ('div')`
 
 const Img = styled('img')`
   background-color: #38227D;
-  width: 1500%;
+  width: 100%;
   margin-bottom: -6em;
   display: block;
-  @media screen and (min-width: 520px) {
+  @media screen and (max-width: 767px) {
     max-width: 415px;
     margin-bottom: 0em;
+    margin-left: -2em;
   }
 `;
 
 export default ({ id, titleColor }) => (
   <Container id={id}>
+    <Col>
       <Card>
         <CardTitle> SOCIAL INTERACTION & TEAM MATCHING </CardTitle>
         Through the use of social media and communication
@@ -87,7 +100,8 @@ export default ({ id, titleColor }) => (
         and channel dedicated to networking with your peers and team matching.
         <br/><br/>
        </Card>
-
+      </Col>
+      <Col>
        <Card>
         <CardTitle> WORKSHOPS & ACTIVITIES </CardTitle>
         Want to upgrade your toolbox? Looking for inspiration? Our live-streamed
@@ -99,15 +113,16 @@ export default ({ id, titleColor }) => (
           <br/><br/>
           <br />
        </Card>
-
+       </Col>
+       <Col>
        <Card>
           <CardTitle> PROJECTS </CardTitle>
           Build an awesome AI project with your teammates!
           It will help you gain experience, opportunities, and exposure to the field of AI.
           And, as always, there will be many prizes to be won!
             <br/><br/>
-          <Img src={Satellite}/>
        </Card>
-       <br/><br/><br/><br/>
+       <Img src={Satellite}/>
+      </Col>
   </Container>
 );

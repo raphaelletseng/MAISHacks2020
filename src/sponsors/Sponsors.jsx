@@ -31,6 +31,9 @@ const Logo = styled('img')`
   height: auto:
   object-fit:contain;
   -webkit-user-drag:none;
+  @media screen and (max-width: 767px){
+    width: 80%;
+  }
 `;
 
 export const LeftCol = styled('div')`
