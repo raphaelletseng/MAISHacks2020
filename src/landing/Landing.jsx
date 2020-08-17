@@ -53,6 +53,11 @@ const Logo = styled('img')`
   @media screen and (min-width: 640px) {
     max-width: 415px;
     margin-bottom: 0em;
+
+    div::after{
+      content: url('maishacksfull-logo.png');
+
+    }
   }
 `;
 
@@ -66,8 +71,7 @@ export default ({id, titleColor }) => (
 
     <SectionContent columns = {true}>
       <SectionLeftColumn>
-          <Logo  src={LogoImage}/>
-
+          <Logo src={LogoImage}/>
       </SectionLeftColumn>
       <SectionRightColumn>
       <SectionTitle titleColor='white'>
